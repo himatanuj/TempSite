@@ -1,0 +1,58 @@
+.Manifesto-Container{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.Manifesto-detail{
+    
+
+}
+.desc{
+
+    font-size: medium;
+    font-weight: 600;
+
+}
+.content{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    display: inline-block;
+   
+
+}
+.name{
+
+    margin: 8px 18px;
+    padding: 6px 30px;
+}
+
+.Email{
+    margin: 8px 18px;
+    padding: 6px 30px;
+}
+
+.button{
+
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 18px;
+    padding: 6px 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    
+
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+
+}

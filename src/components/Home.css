@@ -1,0 +1,32 @@
+.Home-img{
+
+
+    width: 100%;
+}
+.img{
+
+    width: 100%;
+    height: 600px;
+    object-fit:cover;
+    margin: 10px auto;
+    border-radius: 18px;
+    
+}
+.Home-title{
+
+    position: absolute;
+    top: 0;
+    padding: 20px 80px;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    
+    
+    
+}
+
+.Home-container{
+
+   margin: 30px 10%;
+   position: relative;
+}
