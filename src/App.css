@@ -37,6 +37,31 @@
   }
 }
 
+@media (max-width:576px) {
+  .navbar{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 170px;
+    z-index: auto;
+    
+    
+  }
+  .navbar-title{
+    color: tomato;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .navbar-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .navbar{
 
   display: flex;
@@ -110,6 +135,29 @@
   font-weight: bold;
 }
 
+@media (max-width:576px){
+  .connect h3{
+
+    position: fixed !important;
+    bottom: 0;
+    background-color: green;
+    color: white;
+    border-radius: 18px;
+    padding: 6px 6px;
+    display: inline;
+    margin: 10px 135px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .connect:hover{
+  
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (min-width:992px){
 .connect{
 
   position: fixed !important;
@@ -127,4 +175,5 @@
 
   background-color: black;
   color: white;
+}
 }

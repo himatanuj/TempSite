@@ -8,6 +8,7 @@ function Home(){
              <p className="Home-title"> Sit Back And Relax <br/>We will Promote You !</p>
              <div className= "Home-img">
              <img className="img" src={tanuj} alt="tanuj"/>
+             <div className='home-details'>
              <p>No one can thrive in the modern marketplace without having a digital footprint. Now more than ever, brands are becoming mobile, portable and shareable. Creating this dynamic online presence with smart and sticky digital content and impactful online experiences is essential. They are the critical components to having a successful brand.</p>
              <h2>A Cohesive Digital Footprint is Key to a Successful Marketing Strategy</h2>
              <p>Did you know that how your website looks and functions directly impacts your business? If your website is slow or designed poorly, it could lead to having a high bounce rate due to people leaving in frustration and finding a resource that is easier to navigate. You can have the best content in your industry on your website, but if it doesn’t load properly or isn’t easily accessible both people and Google won’t notice it.
@@ -17,6 +18,8 @@ function Home(){
              <p>There are hundreds or even thousands of things that will influence your rankings. But focusing on developing a highly functional website, with relevant content valuable to your prospects is an excellent way to launch your online brand – and ensure you bring “eyeballs” to your site.
 
              </p>
+             </div>
+             
              </div>
              
 

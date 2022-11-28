@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       
      <p className="App-Title"> </p>
-      <navbar className="navbar">
+      <navbar className="navbar" style = {{md:5}}>
         
       <Link to = '/Home' className='link'><h2 className='navbar-title' style={{color:""}} >🤴 Marketing Kings 🤴</h2></Link>
         
