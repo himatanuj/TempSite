@@ -2,9 +2,10 @@ import  '../components/About.css';
 import React, {useState} from 'react'; 
 
 
-
-
 function About(){
+
+
+   
     const [counter, setCounter] = useState(0);
     function IncrementHandler(){
 
@@ -19,9 +20,9 @@ function About(){
         setCounter(0);
     }
     return(
-        
-     <div>   
-    
+       
+     <div> 
+    <h1>Still We Are Under Construction</h1>
     <h1> {counter}</h1>
 
     <button className='bt' onClick={IncrementHandler}>Increment</button>

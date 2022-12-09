@@ -1,17 +1,41 @@
 import './Manifesto.css';
-import React,{useState} from 'react';
+import React,{useRef, useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 
 
 
 function Manifesto(){
-    const [counter, setCounter] = useState();
+    const navigate = useNavigate();
+    const [counter, setCounter] = useState(null);
+    const InputData = useRef(null);
+    const inputdata = useRef(null);
 
+    function Namehandler(){
+        setCounter('');
+
+    }
+    function EmailHandler(){
+        setCounter('');
+
+    }
     function SubmitHandler(){
-
-        setTimeout((x)=>{
-             setCounter('Thanks for Your Response !');
+        const DataInput = InputData.current.value; 
+        const DataOutput = inputdata.current.value;
+        let data = {
+            name: DataInput,
+            email: DataOutput,
+        } 
     
-            }, 1000)
+        
+
+      fetch('https://snappy-stacker-315807-default-rtdb.firebaseio.com/details.json', 
+      {
+        method : 'post',
+        body : JSON.stringify(data),
+
+      }).then(()=>{
+        navigate('/Details');
+      })     
     }
     return(
 
@@ -19,14 +43,14 @@ function Manifesto(){
 
         <div className="Manifesto-Container">
             <div className="Manifesto-detail">
-            <h1>To Get Manifesto ! Please Submit Your Details for More Info</h1>
+            <h1>To Get Manifesto ! Please Register Your Details for More Info</h1>
             <h2>{counter}</h2>
-            <div className='content' >
             
-                
-           <tr> <input className="name" type= 'text' placeholder="Enter your Name"></input></tr>
-           <tr> <input className="Email" type= 'text' placeholder="Enter your Email"></input></tr>
-           <tr><button className='button' onClick={SubmitHandler} >Submit</button></tr>
+            <div className='content' >  
+           <tr> <input className="name" type= 'text' placeholder="Enter your Name" onClick={Namehandler} required ref={InputData}></input></tr>
+           <tr> <input className="Email" type= 'email' placeholder="Enter your Email" onClick={EmailHandler} required ref={inputdata}></input></tr>
+           <tr> <button className='button' onClick={SubmitHandler} >Submit</button> </tr>
+           
             
             </div>
            
@@ -38,5 +62,6 @@ function Manifesto(){
         
 
     );
-}
+} 
+
 export default Manifesto;

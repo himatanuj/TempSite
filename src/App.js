@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Manifesto from './components/Manifesto';
 import Connect from './components/Connect';
+import DetailsSubmit from './components/DetailsSubmit';
 // import bootstrap from 'react-bootstrap';
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
         
         <div className='navbar-options'>
         <Link to = '/Home' className='link'> Home</Link>
-        <Link to = '/About' className='link'>About</Link>
-        <Link to = '/Manifesto' className='btn'>Manifesto</Link>
+        <Link to = '/About' className='link'> About</Link>
+        <Link to = '/Manifesto' className='btn'> Manifesto</Link>
         
         </div>
         
@@ -31,6 +32,7 @@ function App() {
               <Route path='/About' element = {<About/>}/>
               <Route path='/Manifesto' element={<Manifesto/>}/> 
               <Route path='/Connect' element={<Connect/>}/>
+              <Route path='/Details' element={<DetailsSubmit/>}/>
 
 
             </Routes>

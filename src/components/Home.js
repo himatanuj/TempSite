@@ -1,10 +1,26 @@
 import tanuj from '../components/tanuj.jpg';
 import  '../components/Home.css';
+import {useRef,useState} from 'react';
 
 function Home(){
+    function searchHandler(){
+        setCounter('');
+    }
+    const [counter, setCounter] = useState(null);
+    const data = useRef(null);
+    function SearchHandler(){
+     const metadata= data.current.value;
+     setCounter(metadata)
+     
+    }
     return(
 
         <div className="Home-container">
+            <div className='search-bar'>
+            <input className="Search" placeholder='Type...' onClick={searchHandler} ref={data}/>
+            <button className='btn' onClick={SearchHandler}>Search</button> 
+            <p className='counter'>{counter}</p>
+            </div>
              <p className="Home-title"> Sit Back And Relax <br/>We will Promote You !</p>
              <div className= "Home-img">
              <img className="img" src={tanuj} alt="tanuj"/>

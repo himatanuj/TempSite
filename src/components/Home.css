@@ -37,3 +37,29 @@
 
     text-align: left;
 }
+
+.Search{
+
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 18px;
+    margin: 0 18px;
+    padding: 8px 10px;
+}
+
+.search-bar{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    display: block;
+    position: sticky;
+}
+.counter{
+
+    display: flex;
+    display: inline-block;
+    margin: 0 19px;
+    position: sticky;
+    text-align: center;
+}

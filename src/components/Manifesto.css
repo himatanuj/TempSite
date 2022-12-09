@@ -20,6 +20,7 @@
     align-content: center;
     text-align: center;
     display: inline-block;
+    margin-bottom: 270px;
    
 
 }
@@ -55,4 +56,9 @@
     background-color: white;
     color: black;
 
+}
+
+.d-none{
+
+    display: none;
 }

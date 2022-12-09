@@ -2,8 +2,10 @@ import './connect.css';
 
 function Connect(){
     return(
-       
-            <h1>Thanks For Connecting Us <br/> We Will Get Back You Soon !</h1>
+            <div className='us'>
+                 <h1>Thanks For Connecting Us <br/> We Will Get Back You Soon !</h1>
+            </div>
+           
         
 
     );
